@@ -54,7 +54,7 @@ Curl example command:
 $ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "grant_type=refresh_token&client_id={client_id}&refresh_token={token}" https://api.pointscene.com/oauth2/token
 ```
 
-Response
+## Response
 
 ```
 HTTP/1.1 200 OK
