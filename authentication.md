@@ -5,14 +5,14 @@ POST /token HTTP/1.1
 Host: https://api.pointscene.com/oauth2/token
  
 grant_type=client_credentials
-&client_id=xxxxxxxxxx
-&client_secret=xxxxxxxxxx
-&scope=instance-write-xxxx
+&client_id={client_id}
+&client_secret={secret}
+&scope=instance-write-{instance_id}
 ```
 
 Curl example command:
 ```
-$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "grant_type=client_credentials&client_id=xxxxxxxxxx&client_secret=xxxxxxxxxx&scope=instance-write-xxxxx" https://api.pointscene.com/oauth2/token
+$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "grant_type=client_credentials&client_id={client_id}&client_secret={secret}&scope=instance-write-{instance_id}" https://api.pointscene.com/oauth2/token
 ```
 
 Clients can be granted scoped access. Available scopes for client access are:
@@ -28,15 +28,15 @@ POST /token HTTP/1.1
 Host: https://api.pointscene.com/oauth2/token
  
 grant_type=password
-&username=xxxxxxxxxx
-&password=xxxxxxxxxx
-&client_id=xxxxxxxxxx
+&username={user}
+&password={pwd}
+&client_id={client_id}
 ```
 
 Curl example command:
 
 ``` 
-$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "grant_type=password&username=xxxxxxxxxx&password=xxxxxxxxxx&client_id=xxxxxxxxxx" https://api.pointscene.com/oauth2/token
+$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "grant_type=password&username={user}&password={pwd}&client_id={client_id}" https://api.pointscene.com/oauth2/token
 ```
 
 ## Refresh token
@@ -45,13 +45,13 @@ POST /token HTTP/1.1
 Host: https://api.pointscene.com/oauth2/token
  
 grant_type=refresh_token
-&client_id=xxxxxxxxxx
-&refresh_token=xxxxxxxxxx
+&client_id={client_id}
+&refresh_token={token}
 ```
 
 Curl example command:
 ```
-$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "grant_type=refresh_token&client_id=xxxxxxxxxx&refresh_token=xxxxxxxxxx" https://api.pointscene.com/oauth2/token
+$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "grant_type=refresh_token&client_id={client_id}&refresh_token={token}" https://api.pointscene.com/oauth2/token
 ```
 
 Response
@@ -63,10 +63,10 @@ Cache-Control: no-store
 Pragma: no-cache
  
 {
- "access_token":"xxxxxxxxxx",
- "refresh_token":"xxxxxxxxxx",
- "expires_in":3600,
- "token_type":"bearer",
+ "access_token":"eyJhbGc...",
+ "refresh_token":"r6pIf...",
+ "expires_in":14399,
+ "token_type":"Bearer",
 }
 
 ```
