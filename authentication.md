@@ -2,7 +2,7 @@
 ## Create access token for Client
 ```
 POST /oauth2/token HTTP/1.1
-Host: https://api.pointscene.com/oauth2/token
+Host: https://api.pointscene.com
  
 grant_type=client_credentials
 &client_id={client_id}
@@ -25,7 +25,7 @@ instance-create - Can create a new instance
 ## Crete access token for User
 ```
 POST /oauth2/token HTTP/1.1
-Host: https://api.pointscene.com/oauth2/token
+Host: https://api.pointscene.com
  
 grant_type=password
 &username={user}
@@ -42,7 +42,7 @@ $ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "grant_ty
 ## Refresh token
 ```
 POST /oauth2/token HTTP/1.1
-Host: https://api.pointscene.com/oauth2/token
+Host: https://api.pointscene.com
  
 grant_type=refresh_token
 &client_id={client_id}
@@ -60,7 +60,6 @@ $ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "grant_ty
 HTTP/1.1 200 OK
 Content-Type: application/json
 Cache-Control: no-store
-Pragma: no-cache
  
 {
  "access_token":"eyJhbGc...",
