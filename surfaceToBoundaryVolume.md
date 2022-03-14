@@ -2,8 +2,10 @@
 ```
 query{
   surfaceToBoundaryVolume(
-    surfaceUri:"{surfaceModelURL}"
+    surfaceUri:"{surfaceURL}"
     targetResolution:1
+    returnTin:true
+    returnTinCrs:"EPSG:3857"
     feature: {
       type:"Feature",
       properties:{},
