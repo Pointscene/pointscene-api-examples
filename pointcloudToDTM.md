@@ -32,7 +32,6 @@ mutation {
               	resolution:1
             	}
             }
-  
           ]
           writers: {
             gdal: {

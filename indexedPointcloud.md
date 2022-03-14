@@ -29,9 +29,8 @@ mutation {
         name: "sync"
         type: "resource.sync"
         args: {
-            labels: {
-                id: indexed-pointcloud-1
-            }
+          labels: {
+            id:"indexed-pointcloud-1"
           }
         }
         inputs: ["info"]
@@ -52,6 +51,5 @@ mutation {
   ) {
     id
   }
-}
 }
 ```
