@@ -10,7 +10,7 @@ mutation {
         name: "input",
         type: "web.download",
         args: {
-          url: "https://storage.googleapis.com/pointscene-sample-data/API-samples/20191106_Rekolan_urheilupuisto_pistepilvi_final_GK24FIN_N2000.laz"
+          url: "https://storage.googleapis.com/pointscene-sample-data/API-samples/pointcloud_L4133A4.laz"
         }
       },  
       {
