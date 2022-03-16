@@ -1,5 +1,5 @@
-# Pointcloud to DTM
-## Create surface COG (Cloud Optimized GEOTiff)
+# Pointcloud to Surface
+## Create surface COG (Cloud Optimized GeoTIFF)
 ```
 mutation {
   createWorkflow(

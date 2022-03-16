@@ -1,4 +1,4 @@
-# Create indexed pointcloud
+# Pointcloud to Potree
 ## Indexed point cloud and update database
 ### Use labels in `resource.sync` task to identify output later on
 ```
@@ -15,8 +15,9 @@ mutation {
         }
       },
       {
-        inputs: ["input"],
+        inputs: ["laz"],
         name: "potree",
+        args: {},
         type: "potreeconverter.convert",
       },
       {
