@@ -29,3 +29,6 @@ Example query [here](https://github.com/Pointscene/pointscene-api-examples/blob/
 ## Sharing data
 ### Create service URLs
 Examples [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/CreateServiceUrl.md) 
+
+### Create signed URL
+Examples [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/CreateSignedUrl.md) 
