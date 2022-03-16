@@ -7,24 +7,45 @@ mutation {
     name: "Create indexed pointcloud"
     instanceId: "{instanceId}"
     tasks: [
-      {
-        name: "laz",
+       {
+        name: "input",
         type: "web.download",
         args: {
-          url: "https://storage.googleapis.com/pointscene-sample-data/API-samples/20191106_Rekolan_urheilupuisto_pistepilvi_final_GK24FIN_N2000.laz"
+          url: "https://storage.googleapis.com/pointscene-sample-data/API-samples/pointcloud_L4133A4.laz"
         }
-      },
+      },     
       {
-        inputs: ["laz"],
+        name:"filter"
+        type:"pdal.translate"
+        inputs:["input"]
+        args: {
+          filters: [
+            {
+              voxeldownsize: {}
+            }
+        	]
+          writers: {
+            las: {
+              offsetX:"auto"
+              offsetY:"auto"
+              offsetZ:"auto"
+            }
+          }
+      	}
+      }
+      {
+        inputs: ["filter"],
         name: "potree",
         type: "potreeconverter.convert",
-        args: {}
+        args: {
+          outputFormat:"LAS"
+        }
       },
       {
         name: "info"
         type: "pdal.info"
         args: {}
-        inputs: ["laz"]
+        inputs: ["filter"]
       }
       {
         name: "sync"
