@@ -12,7 +12,11 @@ grant_type=client_credentials
 
 Curl example command:
 ```
-$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "grant_type=client_credentials&client_id={client_id}&client_secret={secret}&scope=instance-write-{instance_id}" https://api.pointscene.com/oauth2/token
+$ curl \
+-X POST \
+-H "Content-Type: application/x-www-form-urlencoded" \
+-d "grant_type=client_credentials&client_id={client_id}&client_secret={secret}&scope=instance-write-{instance_id}" \
+https://api.pointscene.com/oauth2/token
 ```
 
 Clients can be granted scoped access. Available scopes for client access are:
@@ -36,7 +40,11 @@ grant_type=password
 Curl example command:
 
 ``` 
-$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "grant_type=password&username={user}&password={pwd}&client_id={client_id}" https://api.pointscene.com/oauth2/token
+$ curl \
+-X POST \
+-H "Content-Type: application/x-www-form-urlencoded" \
+-d "grant_type=password&username={user}&password={pwd}&client_id={client_id}" \
+https://api.pointscene.com/oauth2/token
 ```
 
 ## Refresh token
@@ -51,7 +59,11 @@ grant_type=refresh_token
 
 Curl example command:
 ```
-$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "grant_type=refresh_token&client_id={client_id}&refresh_token={token}" https://api.pointscene.com/oauth2/token
+$ curl \
+-X POST \
+-H "Content-Type: application/x-www-form-urlencoded" \
+-d "grant_type=refresh_token&client_id={client_id}&refresh_token={token}" \
+https://api.pointscene.com/oauth2/token
 ```
 
 ## Response

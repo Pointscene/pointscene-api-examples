@@ -25,7 +25,7 @@ query{
 
 curl
 ```
-curl \
+$ curl \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer {TOKEN}" \
