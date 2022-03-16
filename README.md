@@ -5,7 +5,7 @@
 
 ## Authentication
 Pointscene API uses OAUTH2.0.   
-Query examples can be found [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/Authentication.md)
+Authentication examples can be found [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/Authentication.md)
 
 ## Workflows
 Pointscene API allows fully customizable workflows utilising open familiar source components and custom tasks included in the API.   
