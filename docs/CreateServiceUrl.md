@@ -1,4 +1,4 @@
-# Creating service URLs for sharing data
+# Create service URLs for sharing data
 
 ## For potree resource
 GraphQL
