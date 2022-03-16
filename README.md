@@ -17,8 +17,8 @@ Example workflow [here](https://github.com/Pointscene/pointscene-api-examples/bl
 Example workflow [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/PointcloudToSurface.md)   
 
 ## Queries
-### Volume query from surface
+### Query volume from surface
 Example query [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/QueryVolume.md)   
 
-### Elevations query from GeoJSON LineString
+### Query profile from surface
 Example query [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/QueryElevations.md)   
