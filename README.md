@@ -14,11 +14,18 @@ Pointscene API allows fully customizable workflows utilising open familiar sourc
 Example workflow [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/PointcloudToPotree.md)   
 
 ### Pointcloud to COG surface
-Example workflow [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/PointcloudToSurface.md)   
+Example workflow [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/PointcloudToSurface.md)
+
+### Surface to COG surface
+Example workflow [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/SurfaceToCOG.md)
 
 ## Queries
 ### Query volume from surface
 Example query [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/QueryVolume.md)   
 
 ### Query profile from surface
-Example query [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/QueryElevations.md)   
+Example query [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/QueryElevations.md)  
+
+## Sharing data
+### Create service URLs
+Examples [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/CreateServiceUrl.md) 

@@ -21,7 +21,7 @@ curl \
 https://api.pointscene.com/graphql
 ```
 
-## WMTS for ortho COG 
+## WMTS for ortho COG resource
 GraphQL
 ```
 mutation{
