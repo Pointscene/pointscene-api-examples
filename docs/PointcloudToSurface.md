@@ -1,5 +1,6 @@
 # Convert pointcloud to cloud optimized surface
 ## Use labels in `resource.sync` task to identify resource later on
+GraphQL
 ```
 mutation {
   createWorkflow(
@@ -60,7 +61,7 @@ mutation {
 }
 ```
 
-Curl sample command:
+curl
 ```
 curl \
 -X POST \

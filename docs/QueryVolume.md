@@ -1,4 +1,5 @@
 # Calculate volume from within boundary from a surface
+GraphQL
 ```
 query{
   surfaceToBoundaryVolume(
@@ -24,7 +25,7 @@ query{
 }
 ```
 
-Curl sample command:
+curl
 ```
 curl \
 -X POST \

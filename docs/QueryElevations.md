@@ -1,4 +1,5 @@
 # Interpolate elevation values for GeoJSON LineString feature from surface
+GraphQL
 ```
 query{
   interpolateSurfaceElevations(
@@ -22,7 +23,7 @@ query{
 }
 ```
 
-Curl sample command:
+curl
 ```
 curl \
 -X POST \
