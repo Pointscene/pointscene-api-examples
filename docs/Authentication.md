@@ -17,8 +17,8 @@ $ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "grant_ty
 
 Clients can be granted scoped access. Available scopes for client access are:
 ```
-instance-read-{id} - Read access to an instance and its entities
-instance-write-{id} - Write access to an instance and its entities
+instance-read-{instance_id} - Read access to an instance and its entities
+instance-write-{instance_id} - Write access to an instance and its entities
 instance-create - Can create a new instance
 ```
 

@@ -8,23 +8,23 @@ mutation {
     instanceId: "{instanceId}"
     tasks: [
       {
-        name: "input",
+        name: "laz",
         type: "web.download",
         args: {
-          url: "{pointcloudURL}"
+          url: "https://storage.googleapis.com/pointscene-sample-data/API-samples/20191106_Rekolan_urheilupuisto_pistepilvi_final_GK24FIN_N2000.laz"
         }
       },
       {
         inputs: ["laz"],
         name: "potree",
-        args: {},
         type: "potreeconverter.convert",
+        args: {}
       },
       {
         name: "info"
         type: "pdal.info"
         args: {}
-        inputs: ["input"]
+        inputs: ["laz"]
       }
       {
         name: "sync"
@@ -44,7 +44,7 @@ mutation {
       }
       {
         name: "enable"
-        type: "resource.upload"
+        type: "resource.enable"
         args: {}
         inputs: ["sync", "output"]
       }

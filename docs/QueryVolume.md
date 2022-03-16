@@ -2,7 +2,7 @@
 ```
 query{
   surfaceToBoundaryVolume(
-    surfaceUri:"{surfaceURL}"
+    surfaceUri:"https://storage.googleapis.com/pointscene-sample-data/API-samples/pointcloud_L4133A4.tif"
     targetResolution:1
     returnTin:true
     returnTinCrs:"EPSG:3857"
