@@ -1,6 +1,6 @@
 # Create service URLs for sharing data
 
-## For potree resource
+## For potree and 3D tiles resources
 GraphQL
 ```
 mutation{

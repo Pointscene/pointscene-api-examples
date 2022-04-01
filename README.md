@@ -13,6 +13,9 @@ Pointscene API allows fully customizable workflows utilising open familiar sourc
 ### Pointcloud to Potree format
 Example workflow [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/PointcloudToPotree.md)   
 
+### Pointcloud to 3D Tiles
+Example workflow [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/PointcloudTo3DTiles.md) 
+
 ### Pointcloud to COG surface
 Example workflow [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/PointcloudToSurface.md)
 
