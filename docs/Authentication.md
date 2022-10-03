@@ -43,7 +43,7 @@ Cache-Control: no-store
 }
 ```
 
-## Crete access token for User
+## Create access token for User
 ```
 POST /oauth2/token HTTP/1.1
 Host: https://api.pointscene.com
