@@ -22,6 +22,9 @@ Example workflow [here](https://github.com/Pointscene/pointscene-api-examples/bl
 ### Surface to COG surface
 Example workflow [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/SurfaceToCOG.md)
 
+### Ortho to COG
+Example workflow [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/OrthoToCOG.md)
+
 ## Queries
 ### Query volume from surface
 Example query [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/QueryVolume.md)   
