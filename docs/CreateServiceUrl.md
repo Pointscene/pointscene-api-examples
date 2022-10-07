@@ -21,7 +21,7 @@ $ curl \
 https://api.pointscene.com/graphql
 ```
 
-## WMTS for ortho COG resource
+## TMS, XYZ, WMS and WMTS for ortho COG resource
 GraphQL
 ```
 mutation{
@@ -29,6 +29,9 @@ mutation{
     resourceId:"{resourceId}"
     objectName:"ortho-cog.tif"
   ) {
+   tms
+   xyz
+   wms
    wmts
   }
 }
@@ -40,6 +43,6 @@ $ curl \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer {TOKEN}" \
--d '{"query": "mutation{createServiceUrl(resourceId:\"{resourceId}\" objectName:\"ortho-cog.tif\"){wmts}}"}' \
+-d '{"query": "mutation{createServiceUrl(resourceId:\"{resourceId}\" objectName:\"ortho-cog.tif\"){tms xyz wms wmts}}"}' \
 https://api.pointscene.com/graphql
 ```
