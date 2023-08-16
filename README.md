@@ -19,6 +19,9 @@ Example workflow [here](https://github.com/Pointscene/pointscene-api-examples/bl
 ### Pointcloud to COG surface
 Example workflow [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/PointcloudToSurface.md)
 
+### Pointcloud to XYZ tiles
+Example workflow [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/PointcloudToXYZTiles.md)
+
 ### Surface to COG surface
 Example workflow [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/SurfaceToCOG.md)
 
