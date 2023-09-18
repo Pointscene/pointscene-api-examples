@@ -29,7 +29,7 @@ Example workflow [here](https://github.com/Pointscene/pointscene-api-examples/bl
 Example workflow [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/OrthoToCOG.md)
 
 ### IFC offset
-Example workflow [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/OffsetIfc.md)
+Example workflow [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/OffsetIFC.md)
 
 ## Queries
 ### Query volume from surface
