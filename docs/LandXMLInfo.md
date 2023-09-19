@@ -11,7 +11,7 @@ mutation {
         name:"LandXML workflow"
         instanceId:"{instanceId}"
         tasks:[
- 					{
+          {
             name:"input"
             type:"resource.input"
             args:{
