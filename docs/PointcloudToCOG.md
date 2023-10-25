@@ -6,7 +6,7 @@ mutation{
     instanceId:"{instanceId}"
     name:"Point cloud to COG"
     tasks:[
-	  {
+      {
         name: "input",
         type: "web.download",
         args: {
@@ -24,7 +24,7 @@ mutation{
           offsetZ:"auto"
         }
       }
-			{
+      {
         name:"raster"
         type:"rasterizer.rasterize"
         inputs:["copc"]
