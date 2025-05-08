@@ -48,7 +48,7 @@ query{
     intervalMinutes
     nextRun
     lastRun
-  	createdAt
+    createdAt
   }
 }
 ```
