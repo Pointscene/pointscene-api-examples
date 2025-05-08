@@ -1,5 +1,5 @@
 # Add configuration
-### Configure the resource with authentication credentials
+### Set up the resource with the necessary authentication configuration
 GraphQL
 ```
 mutation{
