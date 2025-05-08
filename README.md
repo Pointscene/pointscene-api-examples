@@ -37,7 +37,7 @@ Example workflow [here](https://github.com/Pointscene/pointscene-api-examples/bl
 ### LandXML info
 Example workflow [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/LandXMLInfo.md)
 
-## Queries
+## Volumes and profiles
 ### Query volume from surface
 Example query [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/QueryVolume.md)   
 
