@@ -15,15 +15,15 @@ mutation{
       }
       dropbox:{
         type: "dropbox"
-        app_key: "{YOUR_APP_KEY}"
-        app_secret: "{YOUR_APP_SECRET}"
+        app_key: "{APP_KEY}"
+        app_secret: "{APP_SECRET}"
         token: "{\"access_token\":\"sl.BfH6SMA...\",\"token_type\":\"Bearer\",\"refresh_token\":\"sl.0gH3...\",\"expiry\":\"2025-05-20T14:45:00.123456789Z\"}"
       }
       aws_s3:{
         type: "s3"
         provider: "AWS"
-        access_key_id: "{YOUR_ACCESS_KEY}"
-        secret_access_key: "{YOUR_SECRET_KEY}"
+        access_key_id: "{ACCESS_KEY}"
+        secret_access_key: "{SECRET_KEY}"
         region: "{REGION}"
       }
       acc:{
