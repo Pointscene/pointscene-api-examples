@@ -51,7 +51,7 @@ Examples [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/
 ### Create signed URL
 Examples [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/CreateSignedUrl.md) 
 
-## Sheduled jobs
+## Sheduled jobs [description here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/DescriptionOfScheduledJobs.md)
 ### Add configuration
 Example [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/AddConfig.md) 
 ### Create scheduled job
