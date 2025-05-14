@@ -60,3 +60,5 @@ Example [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/d
 Example [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/QueryJobs.md) 
 ### Update scheduled job
 Example [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/UpdateJob.md) 
+### Delete scheduled job
+Example [here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/DeleteJob.md) 
