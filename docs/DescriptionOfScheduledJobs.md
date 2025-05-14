@@ -84,7 +84,7 @@ Once you have defined the configuration, you can create a new scheduled job usin
 
 ## Query Scheduled Jobs [example here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/QueryJobs.md)   
 
-You can retrieve information about existing scheduled jobs to monitor their status or verify their configurations. API provides two GraphQL queries for retrieving information about scheduled jobs. These queries allow you to list all jobs for an instance or get detailed information about a specific job included job history.
+You can retrieve information about existing scheduled jobs to monitor their status or verify their configurations. API provides two GraphQL queries for retrieving information about scheduled jobs. These queries allow you to list all jobs for an instance or get detailed information about a specific job including job history.
 
 ## Update Scheduled Job [example of disabling a job here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/UpdateJob.md)   
 
@@ -92,6 +92,7 @@ You can modify existing scheduled jobs to change their configuration, schedule, 
 
 ### Update Parameters
 - **jobId**: The unique identifier of the job to update (required)
+- **instanceId**: The unique identifier of the instance where the job belongs (required)
 - **workflow**: The updated workflow configuration (optional)
 - **frequencyType**: Change the scheduling method (optional)
 - **cronExpression**: New cron expression (required if changing to CRON_BASED)
@@ -121,7 +122,6 @@ Scheduled jobs execute automatically according to their defined schedule. The sy
 - Use descriptive names and detailed descriptions for your jobs
 - Test your workflows thoroughly before scheduling them
 - Monitor job execution history regularly
-- Consider setting up notifications for job failures
 - Use appropriate frequency settings to avoid unnecessary system load
 
 
