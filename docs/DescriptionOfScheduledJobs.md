@@ -11,6 +11,7 @@ Scheduled jobs in Pointscene API enable users to:
 - Create new scheduled jobs
 - Query existing scheduled jobs
 - Update job configurations
+- Delete scheduled jobs
 
 ## Add Configuration [example here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/AddConfig.md)   
 
@@ -21,6 +22,8 @@ Before creating a scheduled job, you need to define its configuration. Add confi
 Once you have defined the configuration, you can create a new scheduled job using the API. The createScheduledJob mutation allows you to create automated, recurring jobs within the Pointscene platform. These jobs can execute predefined workflows on a schedule, either using cron expressions or time intervals.
 
 ### Scheduled Job Parameters
+
+#### Required Parameters
 
 ### `instanceId`
 - **Type**: ID (number internally)
@@ -87,6 +90,16 @@ You can retrieve information about existing scheduled jobs to monitor their stat
 
 You can modify existing scheduled jobs to change their configuration, schedule, or task parameters. Allows you to modify an existing scheduled job in the platform. You can update various aspects of the job including its workflow, scheduling parameters, and status. This functionality is essential for maintaining and adjusting automated workflows as requirements change over time.
 
+### Update Parameters
+- **jobId**: The unique identifier of the job to update (required)
+- **workflow**: The updated workflow configuration (optional)
+- **frequencyType**: Change the scheduling method (optional)
+- **cronExpression**: New cron expression (required if changing to CRON_BASED)
+- **intervalMinutes**: New interval in minutes (required if changing to INTERVAL_BASED)
+- **active**: Change the job's active status (optional)
+- **name**: Update the job's name (optional)
+- **description**: Update the job's description (optional)
+
 ### Notes
 - You only need to include the parameters you want to change
 - When updating the workflow, the entire workflow object must be provided (partial updates of the workflow are not supported)
@@ -96,6 +109,20 @@ You can modify existing scheduled jobs to change their configuration, schedule, 
 ## Delete Scheduled Job [example here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/DeleteJob.md)   
 
 You can delete a scheduled job from the platform using the deleteScheduledJob mutation. This mutation allows you to remove a job from the system, preventing it from executing further.
+
+### Delete Parameters
+- **jobId**: The unique identifier of the job to delete (required)
+
+## Job Execution and Error Handling
+
+Scheduled jobs execute automatically according to their defined schedule. The system maintains a history of job executions, including success/failure status and execution logs. If a job fails, it will attempt to run again at the next scheduled time.
+
+## Best Practices
+- Use descriptive names and detailed descriptions for your jobs
+- Test your workflows thoroughly before scheduling them
+- Monitor job execution history regularly
+- Consider setting up notifications for job failures
+- Use appropriate frequency settings to avoid unnecessary system load
 
 
 
