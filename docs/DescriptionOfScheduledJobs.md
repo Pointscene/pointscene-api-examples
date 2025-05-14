@@ -88,7 +88,7 @@ You can retrieve information about existing scheduled jobs to monitor their stat
 
 ## Update Scheduled Job [example of disabling a job here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/UpdateJob.md)   
 
-You can modify existing scheduled jobs to change their configuration, schedule, or task parameters. Allows you to modify an existing scheduled job in the platform. You can update various aspects of the job including its workflow, scheduling parameters, and status. This functionality is essential for maintaining and adjusting automated workflows as requirements change over time.
+You can modify existing scheduled jobs to change their configuration, schedule, or task parameters. You can update various aspects of the job including its workflow, scheduling parameters, and status. This functionality is essential for maintaining and adjusting automated workflows as requirements change over time.
 
 ### Update Parameters
 - **jobId**: The unique identifier of the job to update (required)
