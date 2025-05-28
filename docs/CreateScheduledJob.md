@@ -10,28 +10,17 @@ mutation {
       instanceId: "{instanceId}"
       tasks: [
         {
-            name:"input"
-            type:"resource.input"
-            args:{
-              id:"{resourceId}"
-              exclude:[
-                "sync/**"
-                ".log/**"
-              ]
-            }
+          name:"sync"
+          type:"sync.files"
+          inputs:[]
+          args:{
+            resourceId:"{resourceId}"
+            remotes:[
+              "acc:/Project Files"
+              "drive:/workdata"
+            ]
           }
-          {
-            name:"syncTask"
-            type:"rclone.sync"
-            args:{
-              id:"{resourceId}"
-              remotes:[
-                "acc:/Project Files"
-                "drive:/workdata"
-              ]
-            }
-            inputs:"input"
-          }
+        }
       ]
     }
     frequencyType: CRON_BASED
