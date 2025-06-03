@@ -84,7 +84,7 @@ Once you have defined the configuration, you can create a new scheduled job usin
 
 ## Query Scheduled Jobs [example here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/QueryJobs.md)   
 
-You can retrieve information about existing scheduled jobs to monitor their status or verify their configurations. API provides two GraphQL queries for retrieving information about scheduled jobs. These queries allow you to list all jobs for an instance or get detailed information about a specific job including job history.
+You can retrieve information about existing scheduled jobs to monitor their status or verify their configurations. The API provides three GraphQL queries for retrieving information about scheduled jobs. These queries allow you to list all jobs for an instance, get detailed information about a specific job, and retrieve execution history for all jobs within an instance.
 
 ## Update Scheduled Job [example of disabling a job here](https://github.com/Pointscene/pointscene-api-examples/blob/main/docs/UpdateJob.md)   
 
