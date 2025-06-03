@@ -28,7 +28,7 @@ mutation{
       }
       acc:{
         type: "acc"
-				token:"{\"access_token\":\"eyJ...\",\"token_type\":\"Bearer\",\"refresh_token\":\"77Glm...\",\"expiry\":\"2025-06-01T14:46:35.791030264+02:00\",\"expires_in\":3779}"
+        token:"{\"access_token\":\"eyJ...\",\"token_type\":\"Bearer\",\"refresh_token\":\"77Glm...\",\"expiry\":\"2025-06-01T14:46:35.791030264+02:00\",\"expires_in\":3779}"
         hub_id: "b.2b7f...\"
         project_id: "b.0b55...\"
       }
