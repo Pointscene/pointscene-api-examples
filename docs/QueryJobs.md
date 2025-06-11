@@ -1,6 +1,6 @@
 # Query scheduled jobs
 
-### Get all jobs
+### Get all jobs with lates execution history
 GraphQL
 ```
 query {
@@ -9,6 +9,7 @@ query {
   ) {
     active
     id
+    history{id jobId success logPath createdAt}
     instanceId
     workflow
     frequencyType
@@ -65,17 +66,80 @@ https://api.pointscene.com/graphql
 
 ### Retrieve execution history for all jobs  
 
-GraphQL
+GraphQL - basic query (first page)
 ```
 query {
-  getScheduledJobHistory(
+  getInstanceJobHistory(
     instanceId: "{instanceId}"
+    page: {
+      first: 20
+    }
   ) {
-    id
-    jobId
-    success
-    logPath
-    createdAt
+    items {
+      id
+      jobId
+      success
+      logPath
+      createdAt
+    }
+    cursor
+    hasNextPage
+  }
+}
+```
+
+curl
+```
+curl \
+-X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer {TOKEN}" \
+-d '{"query": "query { getInstanceJobHistory(instanceId: \"{instanceId}\", page: { first: 20 }) { items { id jobId success logPath createdAt } cursor hasNextPage } }"}' \
+https://api.pointscene.com/graphql
+```
+GraphQL - Fetching Subsequent Pages
+```
+query {
+  getInstanceJobHistory(
+    instanceId: "{instanceId}"
+    page: {
+      first: 20
+      after: "{cursor_from_previous_response}"
+    }
+  ) {
+    items {
+      id
+      jobId
+      success
+      logPath
+      createdAt
+    }
+    cursor
+    hasNextPage
+  }
+}
+```
+
+curl
+```
+curl \
+-X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer {TOKEN}" \
+-d '{"query": "query { getInstanceJobHistory(instanceId: \"{instanceId}\", page: { first: 20, after: \"{cursor_from_previous_response}\" }) { items { id jobId success logPath createdAt } cursor hasNextPage } }"}' \
+https://api.pointscene.com/graphql
+```
+
+### Retrieve execution history by history id  
+
+GraphQL
+
+```
+query{
+  getScheduledJobHistory(
+    jobHistoryId:"{jobHistoryId}"
+  ) {
+    id jobId success createdAt signedLogUrl
   }
 }
 ```
@@ -86,5 +150,6 @@ $ curl \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer {TOKEN}" \
--d '{"query": "query { getScheduledJobHistory(instanceId: \"{instanceId}\") { id jobId success logPath createdAt } }"}' \
+-d '{"query": "query { getScheduledJobHistory(jobHistoryId: \"{jobHistoryId}\") { id jobId success createdAt signedLogUrl } }"}' \
 https://api.pointscene.com/graphql
+```
