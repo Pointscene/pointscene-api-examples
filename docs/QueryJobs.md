@@ -67,6 +67,7 @@ https://api.pointscene.com/graphql
 ### Retrieve execution history for all jobs  
 
 GraphQL - basic query (first page)
+Default page size is 100 if not specified
 ```
 query {
   getInstanceJobHistory(
